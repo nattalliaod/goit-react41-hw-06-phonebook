@@ -1,5 +1,4 @@
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
-import logger from 'redux-logger';
 import {
   persistStore,
   FLUSH,
@@ -9,6 +8,7 @@ import {
   PURGE,
   REGISTER,
 } from 'redux-persist';
+import logger from 'redux-logger';
 import { contactsReducer } from './contactsSlice';
 
 export const store = configureStore({
